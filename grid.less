@@ -1,0 +1,328 @@
+/*
+MIT License
+
+Copyright (c) 2017 Markus Jylhänkangas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+@gap: 0.5%;
+
+@one: 8.3333333333%;
+@two: 16.6666666667%;
+@three: 25%;
+@four: 33.3333333333%;
+@five: 41.6666666667%;
+@six: 50%;
+@seven: 58.3333333333%;
+@eight: 66.6666666667%;
+@nine: 75%;
+@ten: 83.3333333333%;
+@eleven: 91.6666666667%;
+@twelve: 100%;
+
+/* Mobile */
+@media (max-width: 550px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+    .row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8, .row-9, .row-10, .row-11, .row-12 {
+        width: 100%;
+        height: auto;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+/* Desktop */
+@media (min-width: 550px) {
+
+    html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+    }
+
+    head {
+        width: 0;
+        height: 0;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    table {
+        table-layout: fixed;
+    }
+
+    .container {
+        position: relative;
+        width: 97% !important;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .baseBox {
+        position: absolute;
+    }
+
+    .col-1 {
+      &:extend(.baseBox);
+        width: @one - @gap;
+    }
+
+    .col-2 {
+      &:extend(.baseBox);
+        width: @two - @gap;
+    }
+
+    .col-3 {
+      &:extend(.baseBox);
+        width: @three - @gap;
+    }
+
+    .col-4 {
+      &:extend(.baseBox);
+        width: @four - @gap;
+    }
+
+    .col-5 {
+      &:extend(.baseBox);
+        width: @five - @gap;
+    }
+
+    .col-6 {
+      &:extend(.baseBox);
+        width: @six - @gap;
+    }
+
+    .col-7 {
+      &:extend(.baseBox);
+        width: @seven - @gap;
+    }
+
+    .col-8 {
+      &:extend(.baseBox);
+        width: @eight - @gap;
+    }
+
+    .col-9 {
+      &:extend(.baseBox);
+        width: @nine - @gap;
+    }
+
+    .col-10 {
+      &:extend(.baseBox);
+        width: @ten - @gap;
+    }
+
+    .col-11 {
+      &:extend(.baseBox);
+        width: @eleven - @gap;
+    }
+
+    .col-12 {
+      &:extend(.baseBox);
+        width: @twelve - @gap;
+        margin-left: 0;
+    }
+
+    .row-1 {
+      &:extend(.baseBox);
+        height: @one - @gap;
+    }
+
+    .row-2 {
+      &:extend(.baseBox);
+        height: @two - @gap;
+    }
+
+    .row-3 {
+      &:extend(.baseBox);
+        height: @three - @gap;
+    }
+
+    .row-4 {
+      &:extend(.baseBox);
+        height: @four - @gap;
+    }
+
+    .row-5 {
+      &:extend(.baseBox);
+        height: @five - @gap;
+    }
+
+    .row-6 {
+      &:extend(.baseBox);
+        height: @six - @gap;
+    }
+
+    .row-7 {
+      &:extend(.baseBox);
+        height: @seven - @gap;
+    }
+
+    .row-8 {
+      &:extend(.baseBox);
+        height: @eight - @gap;
+    }
+
+    .row-9 {
+      &:extend(.baseBox);
+        height: @nine - @gap;
+    }
+
+    .row-10 {
+      &:extend(.baseBox);
+        height: @ten - @gap;
+    }
+
+    .row-11 {
+      &:extend(.baseBox);
+        height: @eleven - @gap;
+    }
+
+    .row-12 {
+      &:extend(.baseBox);
+        height: @twelve - @gap;
+    }
+
+    .x-offset-1 {
+      &:extend(.baseBox);
+        margin-left: @one + @gap;
+    }
+
+    .x-offset-2 {
+      &:extend(.baseBox);
+        margin-left: @two + @gap;
+    }
+
+    .x-offset-3 {
+      &:extend(.baseBox);
+        margin-left: @three + @gap;
+    }
+
+    .x-offset-4 {
+      &:extend(.baseBox);
+        margin-left: @four + @gap;
+    }
+
+    .x-offset-5 {
+      &:extend(.baseBox);
+        margin-left: @five + @gap;
+    }
+
+    .x-offset-6 {
+      &:extend(.baseBox);
+        margin-left: @six + @gap;
+    }
+
+    .x-offset-7 {
+      &:extend(.baseBox);
+        margin-left: @seven + @gap;
+    }
+
+    .x-offset-8 {
+      &:extend(.baseBox);
+        margin-left: @eight + @gap;
+    }
+
+    .x-offset-9 {
+      &:extend(.baseBox);
+        margin-left: @nine + @gap;
+    }
+
+    .x-offset-10 {
+      &:extend(.baseBox);
+        margin-left: @ten + @gap;
+    }
+
+    .x-offset-11 {
+      &:extend(.baseBox);
+        margin-left: @eleven + @gap;
+    }
+
+    .y-offset-1 {
+      &:extend(.baseBox);
+        top: @one + @gap;
+    }
+
+    .y-offset-2 {
+      &:extend(.baseBox);
+        top: @two + @gap;
+    }
+
+    .y-offset-3 {
+      &:extend(.baseBox);
+        top: @three + @gap;
+    }
+
+    .y-offset-4 {
+      &:extend(.baseBox);
+        top: @four + @gap;
+    }
+
+    .y-offset-5 {
+      &:extend(.baseBox);
+        top: @five + @gap;
+    }
+
+    .y-offset-6 {
+      &:extend(.baseBox);
+        top: @six + @gap;
+    }
+
+    .y-offset-7 {
+      &:extend(.baseBox);
+        top: @seven + @gap;
+    }
+
+    .y-offset-8 {
+      &:extend(.baseBox);
+        top: @eight + @gap;
+    }
+
+    .y-offset-9 {
+      &:extend(.baseBox);
+        top: @nine + @gap;
+    }
+
+    .y-offset-10 {
+      &:extend(.baseBox);
+        top: @ten + @gap;
+    }
+
+    .y-offset-11 {
+      &:extend(.baseBox);
+        top: @eleven + @gap;
+    }
+}
