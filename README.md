@@ -8,6 +8,3 @@ Elementtejä voi siirrellä leveys ja korkeus suunnissa `x-offset-*` ja `y-offse
 Elementtien välissä olevaa tilaa voi säätää `@gap` muuttujalla
 
 Kaikilli elementeillä lähtien `<html>` sinun käyttämään elementtiin asti pitää olla määritetty width ja height 
-
-# Lisenssi
-Projekti on lisensoitu MIT lisenssillä joka löytyy LICENSE tiedostosta.
